@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Panacea.Modularity.UserAccount
 {
-    public interface IUserAccountPlugin
+    public interface IUserAccountPlugin:IPlugin
     {
-        void NavigateToRegister();
-
-        void NavigateToMyAccount();
+        IUserAccountManager GetUserAccountManager();
     }
 }
