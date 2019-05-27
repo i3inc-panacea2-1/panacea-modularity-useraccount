@@ -10,7 +10,7 @@ namespace Panacea.Modularity.UserAccount
     {
         void NavigateToRegister();
 
-        void NavigateToLogin();
+        Task<bool> LoginAsync();
 
         void NavigateToMyAccount();
 
