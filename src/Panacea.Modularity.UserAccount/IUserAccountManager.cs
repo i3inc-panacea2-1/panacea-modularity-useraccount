@@ -12,6 +12,8 @@ namespace Panacea.Modularity.UserAccount
 
         Task<bool> LoginAsync();
 
+        Task<bool> RegisterAsync();
+
         void NavigateToMyAccount();
 
         Task<bool> RequestLoginAsync(string text);
