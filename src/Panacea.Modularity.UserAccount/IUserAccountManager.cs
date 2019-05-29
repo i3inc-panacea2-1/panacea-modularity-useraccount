@@ -15,5 +15,7 @@ namespace Panacea.Modularity.UserAccount
         void NavigateToMyAccount();
 
         Task<bool> RequestLoginAsync(string text);
+
+        Task<bool> LogoutAsync(bool force = false);
     }
 }
